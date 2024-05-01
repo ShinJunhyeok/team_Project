@@ -765,6 +765,7 @@ const iotScroll = () => {
     let $images2 = get('.iot .iot-area4 ul');
     let $videoArea = get('.iot .iot-area6 .video');
     let $videos = getAll('.iot .iot-area6 .video ul li');
+    let timer;
 
     window.addEventListener('scroll', (e) => {
         if (window.scrollY >= 720) {
@@ -779,20 +780,21 @@ const iotScroll = () => {
     });
     $videoArea.addEventListener('wheel', (e) => {
         document.body.style.overflow = 'hidden';
-        if (e.deltaY > 0) {
-            $videos.forEach((video) => {
-                setTimeout(() => {
-                    video.classList.toggle('on');
-                    $videoArea.animate({ opacity: [0, 1] }, 400);
-                }, 1000);
-            });
-        } else {
-            $videos.forEach((video) => {
-                setTimeout(() => {
-                    video.classList.toggle('on');
-                    $videoArea.animate({ opacity: [0, 1] }, 400);
-                }, 1000);
-            });
+        if (!timer) {
+            timer = setTimeout(() => {
+                timer = null;
+                if (e.deltaY > 0) {
+                    $videos.forEach((video) => {
+                        video.classList.toggle('on');
+                        $videoArea.animate({ opacity: [0, 1] }, 400);
+                    });
+                } else {
+                    $videos.forEach((video) => {
+                        video.classList.toggle('on');
+                        $videoArea.animate({ opacity: [0, 1] }, 400);
+                    });
+                }
+            }, 1000);
         }
     });
     window.addEventListener('click', (e) => {
