@@ -115,6 +115,7 @@
     cursor: pointer;
     color: var(--gray-scale-300);
     text-align: center;
+    transition: 0.7s;
 }
 .soln-tab .tab-menu li.on a {
     display: block;
