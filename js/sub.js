@@ -781,14 +781,18 @@ const iotScroll = () => {
         document.body.style.overflow = 'hidden';
         if (e.deltaY > 0) {
             $videos.forEach((video) => {
-                video.classList.toggle('on');
-                $videoArea.animate({ opacity: [0, 1] }, 400);
+                setTimeout(() => {
+                    video.classList.toggle('on');
+                    $videoArea.animate({ opacity: [0, 1] }, 400);
+                }, 1000);
             });
         } else {
             $videos.forEach((video) => {
-                video.classList.toggle('on');
+                setTimeout(() => {
+                    video.classList.toggle('on');
+                    $videoArea.animate({ opacity: [0, 1] }, 400);
+                }, 1000);
             });
-            $videoArea.animate({ opacity: [0, 1] }, 400);
         }
     });
     window.addEventListener('click', (e) => {
