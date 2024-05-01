@@ -882,19 +882,13 @@ const loginForm = () => {
             alert('비밀번호를 입력해주세요.');
             $password.focus();
         } else {
-            window.open('./index.html');
+            window.location.replace('./index.html');
         }
     });
 
     $signupBtn.addEventListener('click', (e) => {
-        window.open('./signup.html');
+        window.location.replace('./signup.html');
     });
-};
-
-// login.html - 아이디 저장
-const saveId = () => {
-    const userLoginId = getCookie('');
-    const checkId = get('.login-page .login-form .login-option p #checkbox');
 };
 
 /* ------------------------------------------------------------------------

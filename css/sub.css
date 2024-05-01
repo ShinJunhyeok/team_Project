@@ -2035,7 +2035,7 @@ p.blog-more a img.right-arrow {
     cursor: pointer;
     transition: 0.3s;
 }
-.signup form .btn:hover button {
+.signup form .btn button:hover {
     background: var(--primary-color);
     border: none;
 }
@@ -2242,7 +2242,7 @@ p.blog-more a img.right-arrow {
     transition: 0.3s;
 }
 
-.inquiry .inquirys .btn:hover button {
+.inquiry .inquirys .btn button:hover {
     background: var(--primary-color);
     border: none;
 }
