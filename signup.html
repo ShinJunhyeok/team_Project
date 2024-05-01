@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/sub.css" />
+        <link rel="stylesheet" href="css/ani.css" />
+        <link rel="stylesheet" href="css/sublayout.css" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+        <link rel="shortcut icon" href="images/common/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+
+        <title>SVMP 사용신청</title>
+    </head>
+    <body>
+        <p id="skipNav" class="blind"><a href="#content">본문 바로가기</a></p>
+        <div id="wrap">
+            <header id="header">
+                <div class="type black"></div>
+            </header>
+            <!-- <section id="visual"></section> -->
+            <main id="container" class="page signup">
+                <section id="content">
+                    <div class="inner">
+                        <h2>SVMP 사용신청</h2>
+                        <strong>아래내용을 작성해주시면</strong>
+                        <strong
+                            >확인 후 신청하신 이메일을 통해 사용가능한 링크를 제공해
+                            드립니다.</strong
+                        >
+                        <strong>정확한 정보 부탁드립니다.</strong>
+                        <form>
+                            <fieldset>
+                                <div class="agree">
+                                    <p>약관동의</p>
+                                    <p class="chkbox">
+                                        <input type="checkbox" name="all" id="all" />
+                                        <label for="all">전체 약관에 모두 동의합니다.</label>
+                                    </p>
+                                    <p class="chkbox">
+                                        <input type="checkbox" name="chk1" id="chk1" class="chk" />
+                                        <label for="chk1"
+                                            ><span>[필수]</span> 개인정보 이용동의</label
+                                        >
+                                        <textarea readonly disabled class="personalInfo">
+test1</textarea
+                                        >
+                                    </p>
+                                    <p class="chkbox">
+                                        <input type="checkbox" name="chk2" id="chk2" class="chk" />
+                                        <label for="chk2"><span>[필수]</span> 이용약관 동의</label>
+                                        <textarea readonly disabled class="termsOfUse">
+test2</textarea
+                                        >
+                                    </p>
+                                </div>
+                                <div class="input">
+                                    <p>
+                                        <label for="userName">이름</label>
+                                        <input
+                                            type="text"
+                                            name="userName"
+                                            id="userName"
+                                            placeholder="사용자 성함을 입력해 주세요."
+                                        />
+                                    </p>
+                                    <p>
+                                        <label for="userEmail">이메일</label>
+                                        <input
+                                            type="email"
+                                            name="userEmail"
+                                            id="userEmail"
+                                            placeholder="업무용 이메일 주소를 기입해 주세요."
+                                        />
+                                    </p>
+                                    <p>
+                                        <label for="companyName">회사</label>
+                                        <input
+                                            type="text"
+                                            name="companyName"
+                                            id="companyName"
+                                            placeholder="회사명을 입력해 주세요."
+                                        />
+                                    </p>
+                                    <p>
+                                        <span>전화번호</span>
+                                        <span
+                                            >시스템 사용중, 활용법 관련 유선안내를 받고자 하시면
+                                            전화번호를 기입해주세요.
+                                        </span>
+                                        <em>
+                                            <input
+                                                type="tel"
+                                                name="phone"
+                                                id="phone"
+                                                onKeyup="this.value=this.value.replace(/[^-+0-9]/g,'');"
+                                            />
+                                            <label for="phone"></label>
+                                        </em>
+                                    </p>
+                                    <p>
+                                        유입채널
+                                        <select name="channel" id="channel" class="channel">
+                                            <option value="" disabled selected hidden>
+                                                유입채널을 선택해주세요.
+                                            </option>
+                                        </select>
+                                    </p>
+                                    <p>
+                                        관심 솔루션
+                                        <select name="solution" id="solution" class="solution">
+                                            <option value="" disabled selected hidden>
+                                                사용하고 싶은 솔루션을 선택해 주세요.
+                                            </option>
+                                        </select>
+                                    </p>
+                                    <p>
+                                        언어
+                                        <select name="language" id="language" class="language">
+                                            <option value="" disabled selected hidden>
+                                                언어를 선택해 주세요.
+                                            </option>
+                                        </select>
+                                    </p>
+                                </div>
+                                <p class="btn">
+                                    <button type="button">제출하기</button>
+                                </p>
+                            </fieldset>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer id="footer"></footer>
+        </div>
+        <script src="js/common.js"></script>
+        <script type="module" src="js/sub.js"></script>
+        <script>
+            const input = document.querySelector('#phone');
+            window.intlTelInput(input, {
+                utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/utils.js',
+            });
+        </script>
+    </body>
+</html>

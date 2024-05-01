@@ -1,0 +1,66 @@
+
+x
+.bg-face {
+    width: 15px; height: 26px;
+    background: url('css_sprites.png') -190px -207px;
+}
+
+
+.bg-Insta {
+    width: 27px; height: 26px;
+    background: url('css_sprites.png') -300px -166px;
+}
+
+
+.bg-link {
+    width: 27px; height: 26px;
+    background: url('css_sprites.png') -300px -212px;
+}
+
+.bg-youtube {
+    width: 27px; height: 19px;
+    background: url('css_sprites.png') -190px -156px;
+}
+
+--------------------------------------------------------------------------------------------------------
+
+.bg-Seavantage_logo_w160_w {
+    width: 160px; height: 31px;
+    background: url('css_sprites.png') -10px -156px;
+}
+
+
+.bg-Seavantage_logo_w160_b {
+    width: 160px; height: 31px;
+    background: url('css_sprites.png') -10px -207px;
+}
+
+
+.bg-Seavantage_logo_w270_b {
+    width: 270px; height: 53px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+
+.bg-Seavantage_logo_w270_w {
+    width: 270px; height: 53px;
+    background: url('css_sprites.png') -10px -83px;
+}
+--------------------------------------------------------------------------------------------------------
+
+.bg-user_icon_g {
+    width: 32px; height: 32px;
+    background: url('css_sprites.png') -300px -10px;
+}
+
+
+.bg-user_icon_b {
+    width: 32px; height: 32px;
+    background: url('css_sprites.png') -300px -62px;
+}
+
+
+.bg-user_icon_w {
+    width: 32px; height: 32px;
+    background: url('css_sprites.png') -300px -114px;
+}

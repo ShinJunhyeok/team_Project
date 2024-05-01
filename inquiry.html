@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/sub.css" />
+        <link rel="stylesheet" href="css/ani.css" />
+        <link rel="stylesheet" href="css/sublayout.css" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+        <link rel="shortcut icon" href="images/common/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+
+        <title>온라인 문의</title>
+    </head>
+    <body>
+        <p id="skipNav" class="blind"><a href="#content">본문 바로가기</a></p>
+        <div id="wrap">
+            <header id="header">
+                <div class="type white"></div>
+            </header>
+            <section id="subVisual" class="type-img">
+                <div class="inner">
+                    <span>
+                        <a href="index.html">HOME</a><i class="bx bx-chevron-right"></i>
+                        <a href="#">문의</a><i class="bx bx-chevron-right"></i>
+                        <a href="inquiry.html">1:1문의</a>
+                    </span>
+                    <h2>공급망 전문성을 갖춘,<br />씨벤티지와 함께 고민하세요!</h2>
+                    <p>
+                        공급망관리 솔루션에 관심이 있으신가요?<br />아래 양식을 통해 편하게
+                        문의해주시면 세일즈 담당자가 자세히 알려드리겠습니다.
+                    </p>
+                </div>
+            </section>
+            <main id="container" class="page inquiry">
+                <section class="content">
+                    <div class="inner">
+                        <div class="inquirys">
+                            <div class="title">
+                                <h2>온라인 문의</h2>
+                                <strong>입력해 주신 정보는 제3자에게 제공되지 않습니다.</strong>
+                            </div>
+                            <div class="write">
+                                <form>
+                                    <fieldset>
+                                        <div class="input">
+                                            <div class="input1">
+                                                <p>
+                                                    <label for="userName">이름</label>
+                                                    <input
+                                                        type="text"
+                                                        name="userName"
+                                                        id="userName"
+                                                        placeholder="이름을 입력해 주세요"
+                                                    />
+                                                </p>
+                                                <p>
+                                                    <label for="companyName">회사명</label>
+                                                    <input
+                                                        type="text"
+                                                        name="companyName"
+                                                        id="companyName"
+                                                        placeholder="회사명 또는 단체명 입력"
+                                                    />
+                                                </p>
+                                                <p>
+                                                    이메일 주소
+                                                    <input
+                                                        type="text"
+                                                        name="userEmail"
+                                                        id="userEmail"
+                                                        placeholder="sales@seavantage.com"
+                                                    />
+                                                </p>
+                                                <p>
+                                                    관심제품
+                                                    <select name="products" id="products">
+                                                        <option value="" disabled selected hidden>
+                                                            관심 제품 선택
+                                                        </option>
+                                                    </select>
+                                                </p>
+                                            </div>
+
+                                            <div class="input2">
+                                                <p>
+                                                    <label for="phone">연락처</label>
+                                                    <input
+                                                        type="tel"
+                                                        name="phone"
+                                                        id="phone"
+                                                        onKeyup="this.value=this.value.replace(/[^-+0-9]/g,'');"
+                                                    />
+                                                </p>
+                                                <p>
+                                                    <label for="position">직책</label>
+                                                    <input
+                                                        type="text"
+                                                        name="position"
+                                                        id="position"
+                                                        placeholder="담당하고 계시는 직책"
+                                                    />
+                                                </p>
+                                                <p>
+                                                    업종유형
+                                                    <select name="industryTypes" id="industryTypes">
+                                                        <option value="" disabled selected hidden>
+                                                            업종유형 선택
+                                                        </option>
+                                                    </select>
+                                                </p>
+                                                <p>
+                                                    문의사항
+                                                    <select name="inquirys" id="inquirys">
+                                                        <option value="" disabled selected hidden>
+                                                            문의사항 선택
+                                                        </option>
+                                                    </select>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="check">
+                                            씨벤티지에 대해 어떻게 알게 되셨습니까?
+                                            <span>
+                                                <em
+                                                    ><input
+                                                        type="checkbox"
+                                                        name="check1"
+                                                        id="check1"
+                                                    />
+                                                    <label for="check1">인터넷검색</label>
+                                                </em>
+                                                <em>
+                                                    <input
+                                                        type="checkbox"
+                                                        name="check2"
+                                                        id="check2"
+                                                    />
+                                                    <label for="check2"
+                                                        >SNS(링크드인,유튜브,블로그 등)
+                                                    </label>
+                                                </em>
+                                                <em
+                                                    ><input
+                                                        type="checkbox"
+                                                        name="check3"
+                                                        id="check3"
+                                                    />
+                                                    <label for="check3">뉴스레터</label>
+                                                </em>
+                                                <em
+                                                    ><input
+                                                        type="checkbox"
+                                                        name="check4"
+                                                        id="check4"
+                                                    />
+                                                    <label for="check4">뉴스 또는 기사</label>
+                                                </em>
+                                                <em
+                                                    ><input
+                                                        type="checkbox"
+                                                        name="check5"
+                                                        id="check5"
+                                                    />
+                                                    <label for="check5">전시회</label>
+                                                </em>
+                                                <em>
+                                                    <input
+                                                        type="checkbox"
+                                                        name="check6"
+                                                        id="check6"
+                                                    />
+                                                    <label for="check6">업계 동료 소개</label>
+                                                </em>
+                                                <em>
+                                                    <input
+                                                        type="checkbox"
+                                                        name="check7"
+                                                        id="check7"
+                                                    />
+                                                    <label for="check7">씨벤티지 직원 소개</label>
+                                                </em>
+                                                <em>
+                                                    <input
+                                                        type="checkbox"
+                                                        name="check8"
+                                                        id="check8"
+                                                    />
+                                                    <label for="check8">기타</label>
+                                                </em>
+                                            </span>
+                                        </p>
+
+                                        <p class="other">
+                                            <label for="text">기타문의사항</label>
+                                            <textarea
+                                                name="text"
+                                                id="text"
+                                                cols="30"
+                                                rows="10"
+                                                placeholder="공급망 가시성 확보에 어려움을 겪고 계시나요? 팀 씨벤티지에서 함께 해결해 드리겠습니다."
+                                            ></textarea>
+                                        </p>
+
+                                        <div class="agree">
+                                            <p class="chkbox">
+                                                <em>
+                                                    <input type="checkbox" name="all" id="all" />
+                                                    <label for="all">전체 동의</label>
+                                                </em>
+                                            </p>
+                                            <p class="chkbox">
+                                                <em>
+                                                    <input
+                                                        type="checkbox"
+                                                        name="chk1"
+                                                        id="chk1"
+                                                        class="chk"
+                                                    />
+                                                    <label for="chk1"
+                                                        ><span>(필수)</span> 개인정보 제3자 제공
+                                                        동의
+                                                    </label>
+                                                </em>
+                                                <textarea
+                                                    readonly
+                                                    disabled
+                                                    class="personalInfo"
+                                                ></textarea>
+                                            </p>
+                                            <p class="chkbox">
+                                                <em>
+                                                    <input
+                                                        type="checkbox"
+                                                        name="chk2"
+                                                        id="chk2"
+                                                        class="chk"
+                                                    />
+                                                    <label for="chk2"
+                                                        >(선택) 마케팅 정보 수신 및 개인정보
+                                                        처리</label
+                                                    >
+                                                </em>
+                                                <textarea
+                                                    readonly
+                                                    disabled
+                                                    class="marketing"
+                                                ></textarea>
+                                            </p>
+                                        </div>
+                                        <p class="btn">
+                                            <button type="button">제출하기</button>
+                                        </p>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rollingBanner">
+                        <div class="logos">
+                            <ul>
+                                <li><img src="images/content/inquiry/logo0.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo1.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo2.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo3.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo4.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo5.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo6.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo7.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo8.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo9.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo10.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo11.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo12.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo13.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo14.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo15.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo16.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo17.png" alt="" /></li>
+                                <li><img src="images/content/inquiry/logo18.png" alt="" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer id="footer"></footer>
+        </div>
+    </body>
+    <script src="js/common.js"></script>
+    <script type="module" src="js/sub.js"></script>
+</html>

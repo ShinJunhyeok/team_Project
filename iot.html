@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>iot</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/sub.css" />
+        <link rel="stylesheet" href="css/ani.css" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+        <link rel="shortcut icon" href="images/common/favicon.ico" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <p id="skipNav" class="blind"><a href="#content">본문 바로가기</a></p>
+        <div id="wrap">
+            <header id="header">
+                <div class="type trans"></div>
+            </header>
+
+            <section id="solnVisual" class="iot-visual">
+                <div class="soln-vis-banner">
+                    <span>IoT CARGO MONITORING</span>
+                    <h2>육상부터 해상까지,<br />IoT 기반 실시간 화물 모니터링</h2>
+                    <p>
+                        이제 육상부터 해상까지 모든 물류 End-to-End 구간의 화물의 위치를 확인하세요.
+                    </p>
+                </div>
+            </section>
+
+            <main id="container" class="soln-page iot">
+                <section id="content">
+                    <div class="iot-area1">
+                        <div class="inner">
+                            <div class="sec-title">
+                                <h3 class="title">
+                                    아직도
+                                    <em class="txt-thick">고객 클레임에 </em>속수무책이신가요?
+                                </h3>
+                                <p>
+                                    <span>IoT 기반 실시간 화물 모니터링</span>으로<br />온·습도,
+                                    도어 개폐 여부 등에 대한 화물의 상태를 실시간으로
+                                    모니터링하세요.
+                                </p>
+                            </div>
+                            <p class="speech">
+                                <img src="images/content/soln/iot/iot-area1-img0.png" alt="" />
+                                <img src="images/content/soln/iot/iot-area1-img1.png" alt="" />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="port-area2 soln-vid">
+                        <div class="inner">
+                            <div class="sec-title">
+                                <h3 class="title">
+                                    화물 위치 및 상태는<em class="txt-thick">한눈에 확인</em
+                                    >되고,<br />한 곳에서 관리되어야 합니다
+                                </h3>
+                            </div>
+                            <div class="video">
+                                <video class="bg-vid-container" muted loop>
+                                    <source
+                                        src="vid/IoT/IoT cargo monitoring.mp4"
+                                        type="video/mp4"
+                                    />
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iot-area3 soln-tab">
+                        <ul class="tab-menu">
+                            <li class="on"><a href="#">화물 위치 추적</a></li>
+                            <li><a href="#">화물 상태 모니터링</a></li>
+                            <li><a href="#">My Fleet 관리</a></li>
+                        </ul>
+                        <div class="inner">
+                            <ul class="tab-list">
+                                <li>
+                                    <div class="sec-title">
+                                        <h3 class="title">
+                                            육상부터 해상까지<br /><em class="txt-thick"
+                                                >한눈에 보이는</em
+                                            >
+                                            내 화물의 위치
+                                        </h3>
+                                        <p>
+                                            해상에서의 AIS를 통한 실시간 화물 추적과 육상에서의<br />
+                                            IoT 기반추적 기술을 사용하여, 플랫폼 내에서 컨테이너
+                                            단위로<br />
+                                            모든 End-to-End 구간의 위치를 한눈에 파악할 수 있습니다.
+                                        </p>
+                                    </div>
+                                    <span
+                                        ><img
+                                            src="images/content/soln/iot/iot-area3-img0.jpg"
+                                            alt="화물 위치 추적"
+                                    /></span>
+                                </li>
+                                <li>
+                                    <div class="sec-title">
+                                        <h3 class="title">
+                                            공급망에서 일어나는 모든 이벤트를<br />
+                                            <em class="txt-thick">실시간으로 모니터링</em>
+                                        </h3>
+                                        <p>
+                                            IoT 센서를 통한 온·습도, 도어 개폐 등<br />
+                                            다양한 변수를 모니터링할 수 있습니다.<br />
+                                            예상치 못한 변수 발생 시 신속한 대응을 위한<br />
+                                            알림 서비스를 제공하여, 화물의 품질과 보안을 향상시킬 수
+                                            있습니다.
+                                        </p>
+                                    </div>
+                                    <span
+                                        ><img
+                                            src="images/content/soln/iot/iot-area3-img1.jpg"
+                                            alt="화물 상태 모니터링"
+                                    /></span>
+                                </li>
+                                <li>
+                                    <div class="sec-title">
+                                        <h3 class="title">
+                                            한눈에 보이는 지도에서<br />보유 자산 및
+                                            <em class="txt-thick">이동 현황 확인</em>
+                                        </h3>
+                                        <p>
+                                            화물 이동 현황부터 얼마나 화물을 보유하고 있는지M<br />
+                                            지도를 통해서 한눈에 확인할 수 있습니다.<br />
+                                            보유 자산 및 이동 현황 파악으로 물류 계획 수립이
+                                            쉬워집니다.
+                                        </p>
+                                    </div>
+                                    <span
+                                        ><img
+                                            src="images/content/soln/iot/iot-area3-img2.jpg"
+                                            alt="My Fleet 관리"
+                                    /></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="iot-area4">
+                        <div class="inner">
+                            <div class="sec-title">
+                                <h3 class="title">
+                                    독보적인 기술력에 <em class="txt-thick">제품력</em>을 더했습니다
+                                </h3>
+                                <p>
+                                    * 해당 IoT 장비는 RoHs, WEEE, UN38.3 등 국제 표준에 부합하여
+                                    해상 및 육상 운송에 있어 안전성이 검증되었습니다.
+                                </p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <span
+                                        ><img
+                                            src="images/content/soln/iot/iot-area4-img0.jpg"
+                                            alt=""
+                                    /></span>
+                                    <p>기존 솔루션과의 통합</p>
+                                    <em
+                                        >IoT Cargo Monitoring은 최첨단 IoT 장비와 기존 Cargo
+                                        Insight과 통합되어<br />
+                                        차별화된 End-to-End 모니터링 환경을 제공합니다.</em
+                                    >
+                                </li>
+                                <li>
+                                    <span
+                                        ><img
+                                            src="images/content/soln/iot/iot-area4-img1.jpg"
+                                            alt=""
+                                    /></span>
+                                    <p>고객 맞춤형 IoT 장비 제공</p>
+                                    <em
+                                        >고객의 비즈니스 및 니즈를 고려하여 컨테이너에 영구
+                                        부착되어<br />
+                                        지속적인 모니터링이 가능한 영구 부착형과 필요에 따라<br />
+                                        다양한 컨테이너 및 화물에 손쉽게 부착 및 분리가 가능한
+                                        탈부착형을 제공합니다.</em
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="iot-area5">
+                        <div class="inner">
+                            <div class="sec-title">
+                                <b>IoT CARGO MONITORING</b>
+                                <h3 class="title">
+                                    다양한 <em class="txt-thick">비즈니스 환경</em>에서<br />
+                                    IoT 기반 실시간 화물 모니터링을 적용하세요
+                                </h3>
+                            </div>
+                            <div class="slide-banner">
+                                <p class="btn">
+                                    <a href="#"><i class="xi-arrow-left"></i></a>
+                                    <a href="#"><i class="xi-arrow-right"></i></a>
+                                </p>
+                                <div class="banner">
+                                    <ul>
+                                        <li class="on">
+                                            <span
+                                                ><img
+                                                    src="images/content/soln/iot/iot-area5-img0.jpg"
+                                                    alt="자동차 및 전자 부품"
+                                            /></span>
+                                            <p class="txt">
+                                                <strong>자동차 및 전자 부품</strong
+                                                ><em
+                                                    >고가의 자동차 및 전자 부품의 배송 지연, 화물
+                                                    손상 이슈를 최소화하기 위한 즉각적인 조치를 취할
+                                                    수 있습니다.</em
+                                                >
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span
+                                                ><img
+                                                    src="images/content/soln/iot/iot-area5-img1.jpg"
+                                                    alt="식품 및 농수산물"
+                                            /></span>
+                                            <p class="txt">
+                                                <strong>식품 및 농수산물</strong
+                                                ><em
+                                                    >과일, 채소, 고기, 해물 등 온·습도에 민감한 모든
+                                                    운송 중인 화물의 상태와 위치를 실시간으로
+                                                    모니터링하고, 품질 저하에 따른 손실과 비용을
+                                                    최소화합니다.</em
+                                                >
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span
+                                                ><img
+                                                    src="images/content/soln/iot/iot-area5-img2.jpg"
+                                                    alt="고가품"
+                                            /></span>
+                                            <p class="txt">
+                                                <strong>고가품</strong
+                                                ><em
+                                                    >운송 중인 고가의 화물의 제품 상태를 실시간으로
+                                                    모니터링하여 화물 도난, 배송 지연, 손상 이슈를
+                                                    최소화할 수 있습니다.</em
+                                                >
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span
+                                                ><img
+                                                    src="images/content/soln/iot/iot-area5-img3.jpg"
+                                                    alt="선사 및 물류사"
+                                            /></span>
+                                            <p class="txt">
+                                                <strong>선사 및 물류사</strong
+                                                ><em
+                                                    >컨테이너 자산 관리가 필요한 선사 및 물류사는
+                                                    공급망 가시성과 통제력을 확보하여 적절한 물류
+                                                    프로세스를 수립할 수 있습니다.</em
+                                                >
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iot-area6">
+                        <div class="inner">
+                            <div class="sec-title">
+                                <h3 class="title">
+                                    물류 공급망의 디지털 혁신<br />
+                                    <em class="txt-thick">End-to-End 실시간 모니터링</em>
+                                </h3>
+                            </div>
+                            <div class="video">
+                                <ul>
+                                    <li class="on">
+                                        <video class="bg-vid-container" autoplay muted loop>
+                                            <source
+                                                src="vid/IoT/IoT_video01.mp4"
+                                                type="video/mp4"
+                                            />
+                                        </video>
+                                        <p>
+                                            <strong
+                                                >육상과 해상의 공급망 연결,<br />
+                                                최적의 모니터링 환경을 구축하였습니다</strong
+                                            >
+                                            <span
+                                                >기존 IoT 기반 모니터링은 해상 구간에서 GPS 정보
+                                                미수신으로 위치 파악이 어렵고, 육상 구간에서만 확인
+                                                가능한 제한된 시스템이었으며, 별도의 선사
+                                                웹사이트에서 이벤트를 확인해야 하는 비효율적인
+                                                운영으로, 신속한 대응이 어려워 물류 차질 등 경제적인
+                                                문제가 발생하고 있습니다.
+                                            </span>
+                                            <span
+                                                >씨벤티지는 이를 해결하기 위해 IoT 장비와 통합하여
+                                                해상과 육상 구간을 하나의 인터페이스에서 실시간으로
+                                                확인할 수 있는 최적의 모니터링 환경을 제공하게
+                                                되었습니다.</span
+                                            >
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <video class="bg-vid-container" autoplay muted loop>
+                                            <source
+                                                src="vid/IoT/IoT_video02.mp4"
+                                                type="video/mp4"
+                                            />
+                                        </video>
+                                        <p>
+                                            <strong
+                                                >새로운 화물 모니터링<br />
+                                                솔루션을 경험하세요</strong
+                                            >
+                                            <span
+                                                >IoT 기반 AIS Tracking 기술을 활용하여, 실시간으로
+                                                선박 위치 정보를 수집하여 육상부터 해상까지 전
+                                                구간의 운송 위치 및 화물 상태를 제공합니다.
+                                            </span>
+                                            <span
+                                                >비즈니스 결정에 신뢰할 수 있는 정보가 절대적으로
+                                                필요한 지금, 물류 End-to-End 구간에서 발생하는
+                                                다양한 이벤트를 실시간으로 확인하고, 신속하게
+                                                대응하여 비즈니스 경쟁력을 갖추세요.</span
+                                            >
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iot-area7 soln-band mb100">
+                        <div class="inner">
+                            <div class="img-txt-more">
+                                <em>solution</em>
+                                <a href="price.html">
+                                    MORE
+                                    <img
+                                        src="images/common/main-vis-scroll-icon_b.png"
+                                        alt="전문 링크 바로가기"
+                                    />
+                                </a>
+                            </div>
+                            <div class="banners">
+                                <div class="trial band-banner">
+                                    <a href="price.html">
+                                        <div class="text">
+                                            <b>TRIAL<em>7일 무료체험</em></b>
+                                            <ul>
+                                                <li>
+                                                    <strong>Cargo Insight</strong>
+                                                    <span>B/L 10개 추적</span>
+                                                </li>
+                                                <li>
+                                                    <strong>Port Insight</strong>
+                                                    <span>항구 3개 인사이트 확인</span>
+                                                </li>
+                                                <li>
+                                                    <strong>iot Insight</strong>
+                                                    <span>선박 5개 추적</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                    <p><a href="price.html">신청하기</a></p>
+                                </div>
+                                <div class="snsight band-banner">
+                                    <a href="price.html">
+                                        <div class="text">
+                                            <b>IoT 실시간 화물 모니터링</b>
+                                            <strong
+                                                >실시간으로 내 화물의 상태를 모니터링
+                                                하세요.</strong
+                                            >
+                                        </div>
+                                    </a>
+                                    <p><a href="price.html">신청하기</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- main end -->
+            <footer id="footer"></footer>
+        </div>
+
+        <script src="js/common.js"></script>
+        <script type="module" src="js/sub.js"></script>
+    </body>
+</html>

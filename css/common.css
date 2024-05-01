@@ -1,0 +1,305 @@
+/* 전체 공통 */
+:root {
+    --primary-color: rgba(27, 197, 197, 1);
+    --primary-color-90: rgba(27, 197, 197, 0.9);
+    --primary-color-80: rgba(27, 197, 197, 0.8);
+    --primary-color-70: rgba(27, 197, 197, 0.7);
+    --primary-color-60: rgba(27, 197, 197, 0.6);
+    --primary-color-50: rgba(27, 197, 197, 0.5);
+    --primary-color-40: rgba(27, 197, 197, 0.4);
+    --primary-color-30: rgba(27, 197, 197, 0.3);
+    --primary-color-20: rgba(27, 197, 197, 0.2);
+    --primary-color-10: rgba(27, 197, 197, 0.1);
+    --gray-scale-50: #eaeaea;
+    --gray-scale-100: #bfbfbf;
+    --gray-scale-200: #a0a0a0;
+    --gray-scale-300: #747474;
+    --gray-scale-400: #595959;
+    --gray-scale-500: #303030;
+    --gray-scale-600: #2c2c2c;
+    --gray-scale-700: #222222;
+    --gray-scale-800: #1a1a1a;
+    --gray-scale-900: #141414;
+}
+#wrap {
+    width: 100%;
+    min-width: 1600px;
+    position: relative;
+    user-select: none;
+    letter-spacing: -0.5px;
+}
+
+.inner {
+    width: 1600px;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+#header,
+#container,
+#content,
+#visual,
+#solnVisual,
+#subVisual,
+#footer {
+    width: 100%;
+}
+
+/* 컨텐츠 내 공통 여백 - 갖다 쓰기 */
+.mt100 {
+    margin-top: 100px;
+}
+.mb100 {
+    margin-bottom: 100px;
+}
+.mt150 {
+    margin-top: 150px;
+}
+.mb150 {
+    margin-bottom: 150px;
+}
+
+#header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+#header .type {
+    height: 80px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+#header .type.on {
+    height: 350px;
+}
+#header .inner {
+    font-size: 16px;
+}
+#header .type {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#header .white {
+    background: #fff;
+}
+#header .type::after {
+    display: none;
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: block;
+    background: var(--gray-scale-100);
+    position: absolute;
+    left: 0;
+    top: 80px;
+    z-index: 120;
+    transition: 0.3s;
+}
+#header .type.on::after {
+    display: block;
+}
+#header .black {
+    background: var(--gray-scale-900);
+}
+#header .trans {
+    background: rgba(25, 25, 25, 0.8);
+}
+#header h1 {
+    position: absolute;
+    left: 0;
+    top: 25px;
+}
+#header h1 a {
+    display: block;
+    width: 160px;
+    height: 31px;
+    background-position: -10px -207px;
+    background-repeat: no-repeat;
+    background-image: url(../images/common/common_sprites.png);
+}
+#header h1 a img {
+}
+#header .nav {
+    width: 100%;
+}
+#header .nav .gnb {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25px;
+    text-align: center;
+}
+#header .nav .gnb > li:nth-of-type(4) {
+    margin-left: 60px;
+}
+#header .nav .gnb li {
+    margin-left: 30px;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+#header .nav .gnb li a {
+    text-align: center;
+}
+#header .nav .gnb li ul {
+    margin-top: 60px;
+}
+#header .nav .gnb li ul li {
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+#header .nav .gnb li ul li:hover a {
+    color: var(--primary-color);
+}
+#header .nav .gnb li ul li a {
+    color: var(--gray-scale-200);
+}
+#header .user {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+#header .user a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-position: -300px -62px;
+    background-repeat: no-repeat;
+    background-image: url(../images/common/common_sprites.png);
+}
+#header .user a img {
+}
+
+#header .black a {
+    color: #fff;
+    font-weight: 400;
+    background-position: -10px -156px;
+}
+#header .black .user a {
+    background-position: -300px -114px;
+}
+
+#header .trans a {
+    color: var(--gray-scale-50);
+    font-weight: 400;
+    background-position: -10px -156px;
+}
+#header .trans .user a {
+    background-position: -300px -10px;
+}
+
+#footer {
+    background: var(--gray-scale-800);
+}
+#footer .inner {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+#footer .bottom-all-menu {
+}
+#footer .bottom-all-menu > ul {
+    font-size: 20px;
+    display: flex;
+    gap: 100px;
+
+    margin-bottom: 95px;
+}
+#footer .bottom-all-menu ul li {
+}
+#footer .bottom-all-menu ul li ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#footer .bottom-all-menu ul li ul li {
+    color: var(--gray-scale-50);
+    text-align: center;
+}
+#footer .bottom-all-menu ul li ul li a {
+    color: var(--gray-scale-200);
+    text-align: center;
+    transition: 0.3s;
+}
+#footer .bottom-all-menu ul li ul li a:hover {
+    color: var(--gray-scale-50);
+}
+
+#footer .flo-area {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+}
+#footer .flo-area h1 {
+    margin-bottom: 20px;
+}
+#footer .flo-area h1 a {
+    float: right;
+    display: block;
+    text-align: right;
+    width: 270px;
+    height: 53px;
+    background-position: -10px -83px;
+    background-repeat: no-repeat;
+    background-image: url(../images/common/common_sprites.png);
+}
+#footer .flo-area .sns {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 34px;
+}
+#footer .flo-area .sns a {
+    display: block;
+    background-repeat: no-repeat;
+}
+#footer .flo-area .sns a:nth-child(1) {
+    width: 27px;
+    height: 26px;
+    background-position: -300px -166px;
+    background-image: url(../images/common/common_sprites.png);
+}
+#footer .flo-area .sns a:nth-child(2) {
+    width: 15px;
+    height: 26px;
+    background-position: -190px -207px;
+    background-image: url(../images/common/common_sprites.png);
+}
+#footer .flo-area .sns a:nth-child(3) {
+    width: 27px;
+    height: 26px;
+    background-position: -300px -212px;
+    background-image: url(../images/common/common_sprites.png);
+}
+#footer .flo-area .sns a:nth-child(4) {
+    width: 27px;
+    height: 19px;
+    background-position: -190px -156px;
+    background-image: url(../images/common/common_sprites.png);
+}
+#footer .flo-area p {
+    color: var(--gray-scale-50);
+}
+#footer .copy {
+    color: var(--gray-scale-50);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 1px solid var(--gray-scale-50);
+}
+#footer .copy span {
+}
+#footer .copy span a:not(:last-child) {
+    margin-right: 20px;
+}
+#footer .copy span a {
+    color: var(--gray-scale-50);
+}

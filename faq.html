@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/sub.css" />
+        <link rel="stylesheet" href="css/ani.css" />
+        <link rel="stylesheet" href="css/sublayout.css" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+        <link rel="shortcut icon" href="images/common/favicon.ico" />
+
+        <title>자주 묻는 질문</title>
+    </head>
+    <body>
+        <p id="skipNav" class="blind"><a href="#content">본문 바로가기</a></p>
+        <div id="wrap">
+            <header id="header">
+                <div class="type white"></div>
+            </header>
+            <section id="subVisual" class="type-img">
+                <div class="inner">
+                    <span>
+                        <a href="index.html">HOME</a><i class="bx bx-chevron-right"></i>
+                        <a href="#">문의</a><i class="bx bx-chevron-right"></i>
+                        <a href="faq.html">FAQ</a>
+                    </span>
+                    <div class="title">
+                        <p>FAQ</p>
+                        <h2>자주 묻는 질문</h2>
+                    </div>
+                </div>
+            </section>
+            <main id="container" class="page faq">
+                <section class="content">
+                    <div class="inner">
+                        <ul class="accordion">
+                            <li>
+                                <div>
+                                    <strong>Q</strong>모든 솔루션은 각각 별도의 플랫폼에서
+                                    사용하나요?<span><i class="xi-angle-down"></i></span>
+                                </div>
+                                <p>
+                                    <strong>A</strong>SVMP 플랫폼 안에서 Cargo Insight, Ship
+                                    Insight, Port Insight를 모두 연계하여 사용할 수 있으며, 솔루션은
+                                    지속적으로 추가될 예정입니다.
+                                </p>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Q</strong>화물 추적이 가능한 선사는 얼마나 되나요?<span
+                                        ><i class="xi-angle-down"></i
+                                    ></span>
+                                </div>
+                                <p>
+                                    <strong>A</strong>현재 씨벤티지에서 화물추적을 지원하는 선사는
+                                    34개이며, 5개의 선사를 추가할 예정입니다.
+                                </p>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Q</strong>M-BL 이외에도 화물을 추적할 수 있나요?<span
+                                        ><i class="xi-angle-down"></i
+                                    ></span>
+                                </div>
+                                <p>
+                                    <strong>A</strong>기본적으로는 M-B/L과 선사 코드(SCAC)를 함께
+                                    입력하여 화물을 추적하며 M-B/L 을 대신하여 Booking Confirm No.로
+                                    조회가 가능합니다.
+                                </p>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Q</strong>해외에서 선적된 화물도 추적할수 있나요?<span
+                                        ><i class="xi-angle-down"></i
+                                    ></span>
+                                </div>
+                                <p>
+                                    <strong>A</strong>국내뿐 아니라 전세계 어디에서 선적된
+                                    화물이라도 추적이 가능합니다.
+                                </p>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Q</strong>전세계 모든 선박을 추적할 수 있나요?<span
+                                        ><i class="xi-angle-down"></i
+                                    ></span>
+                                </div>
+                                <p>
+                                    <strong>A</strong>모든 Class A 선박 (DWT 300 ton 이상의 상선)의
+                                    추적 정보를 API와 SaaS로 제공합니다. 향후 Class B 선박까지
+                                    확대할 계획입니다.
+                                </p>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Q</strong>선박정보는 얼마나 자주 업데이트 되나요?<span
+                                        ><i class="xi-angle-down"></i
+                                    ></span>
+                                </div>
+                                <p>
+                                    <strong>A</strong>선박에서 전송하는 AIS 데이터 발송 주기는 모두
+                                    상이하며, 씨벤티지에서는 15분 간격으로 데이터를 업데이트 합니다.
+                                </p>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Q</strong>어떤 유형의 AIS 데이터가 포함되어 있나요?<span
+                                        ><i class="xi-angle-down"></i
+                                    ></span>
+                                </div>
+                                <p>
+                                    <strong>A</strong>씨벤티지가 수집하는 AIS 데이터는
+                                    위성(Satelite), 육상(Terrestrial) 및 선박간(Dynamic) 데이터를
+                                    모두 포함하며 실시간으로 데이터를 수집합니다.
+                                </p>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Q</strong>Port Insight에서 제공하는 항구 수는 얼마나
+                                    되나요?<span><i class="xi-angle-down"></i></span>
+                                </div>
+                                <p>
+                                    <strong>A</strong>전세계 753개의 항구에 대한 Port Insight
+                                    서비스를 제공하고 있으며, 서비스 제공 항구는 점점 증가하고
+                                    있습니다.
+                                </p>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Q</strong>사용중인 프로그램에 API를 연동하여 사용할 수
+                                    있나요?<span><i class="xi-angle-down"></i></span>
+                                </div>
+                                <p>
+                                    <strong>A</strong>웹 기반의 SaaS 서비스 이외에도 API 연동을 통해
+                                    사용중인 ERP 또는 내부 프로그램에서 SeaVantage의 다양한 서비스를
+                                    이용할 수 있습니다.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+            <footer id="footer"></footer>
+        </div>
+    </body>
+    <script src="js/common.js"></script>
+    <script type="module" src="js/sub.js"></script>
+</html>

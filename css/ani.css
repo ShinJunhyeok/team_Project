@@ -1,0 +1,106 @@
+/* main */
+@keyframes scrollIcon {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/* main logos + js */
+@keyframes rollingleft1 {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    50.01% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes rollingleft2 {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+/* main more link */
+@keyframes BottomTOTop {
+    0% {
+        transform: translate(-50%, 50px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+/* solution more link */
+@keyframes BottomTOTop {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* solution port hover banner */
+@keyframes bannerTxt {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* blog-list arrow */
+@keyframes moveArrow {
+    0% {
+        margin-left: 20px;
+    }
+    100% {
+        margin-left: 30px;
+    }
+}
+
+/* price bg-color */
+@keyframes bgRotate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

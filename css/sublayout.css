@@ -1,0 +1,91 @@
+/* 컨텐츠 내 공통 여백 - 갖다 쓰기 */
+:root {
+  --primary-color: rgba(27, 197, 197, 1);
+  --primary-color-90: rgba(27, 197, 197, 0.9);
+  --primary-color-80: rgba(27, 197, 197, 0.8);
+  --primary-color-70: rgba(27, 197, 197, 0.7);
+  --primary-color-60: rgba(27, 197, 197, 0.6);
+  --primary-color-50: rgba(27, 197, 197, 0.5);
+  --primary-color-40: rgba(27, 197, 197, 0.4);
+  --primary-color-30: rgba(27, 197, 197, 0.3);
+  --primary-color-20: rgba(27, 197, 197, 0.2);
+  --primary-color-10: rgba(27, 197, 197, 0.1);
+
+  --gray-scale-50: #eaeaea;
+  --gray-scale-100: #bfbfbf;
+  --gray-scale-200: #a0a0a0;
+  --gray-scale-300: #747474;
+  --gray-scale-400: #595959;
+  --gray-scale-500: #303030;
+  --gray-scale-600: #2c2c2c;
+  --gray-scale-700: #222222;
+  --gray-scale-800: #1a1a1a;
+  --gray-scale-900: #141414;
+}
+.mt100 {
+  margin-top: 100px;
+}
+.mb100 {
+  margin-bottom: 100px;
+}
+.mt150 {
+  margin-top: 150px;
+}
+.mb150 {
+  margin-bottom: 150px;
+}
+
+/* 서브 비주얼 공통 */
+#subVisual {
+  padding: 160px 0px 80px 0px;
+}
+#subVisual.type-img span a {
+  color: #fff;
+}
+#subVisual.type-img {
+  background: #000;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  background-image: url(../images/content/test.jpg);
+  color: #fff;
+  margin-bottom: 150px;
+}
+
+#subVisual h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+
+#subVisual p {
+  font-size: 24px;
+  padding-bottom: 100px;
+}
+#subVisual span {
+  float: right;
+}
+#subVisual span a {
+  font-size: 16px;
+  transition: 0.2s;
+}
+#subVisual span i {
+  font-size: 20px;
+  vertical-align: middle;
+}
+#subVisual span a:hover {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+#subVisual .title h2 {
+  margin-bottom: 160px;
+  padding-top: 0;
+}
+#subVisual .title p {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 0;
+}
