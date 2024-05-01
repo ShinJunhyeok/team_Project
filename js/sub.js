@@ -782,11 +782,13 @@ const iotScroll = () => {
         if (e.deltaY > 0) {
             $videos.forEach((video) => {
                 video.classList.toggle('on');
+                $videoArea.animate({ opacity: [0, 1] }, 400);
             });
         } else {
             $videos.forEach((video) => {
                 video.classList.toggle('on');
             });
+            $videoArea.animate({ opacity: [0, 1] }, 400);
         }
     });
     window.addEventListener('click', (e) => {
